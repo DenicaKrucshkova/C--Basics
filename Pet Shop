@@ -1,0 +1,21 @@
+using System;
+
+namespace MyFirstProject1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int foodForDogs = int.Parse(Console.ReadLine());
+            int foodForCats = int.Parse(Console.ReadLine());
+            double price1 = foodForDogs * 2.50;
+            double price2 = foodForCats * 4.00;
+            double totalSum = price1 + price2;
+            Console.WriteLine($"{totalSum} lv.");
+            
+            
+           
+
+        }
+    }
+}
