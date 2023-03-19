@@ -1,0 +1,21 @@
+using System;
+
+namespace MyFirstProject1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string architectName=Console.ReadLine();
+            
+            int coutOfProject = int.Parse(Console.ReadLine());
+            int workHours = coutOfProject * 3;
+
+            Console.WriteLine($"The architect {architectName} will need {workHours} hours to complete {coutOfProject} project/s.");
+            
+            
+           
+
+        }
+    }
+}
