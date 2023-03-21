@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 6iro4ina - width
+            //daljina-length
+            //wiso4ina-mustache
+            //procent-percentage
+            //obem-volume
+
+            int lengtht = int.Parse(Console.ReadLine());
+            int width = int.Parse(Console.ReadLine());
+            int height = int.Parse(Console.ReadLine());
+            double percent = double.Parse(Console.ReadLine());
+            
+
+            double volume = lengtht * width * height;
+            double volumeInLiters = volume/1000;
+            double busy= percent / 100;
+            double liters = volumeInLiters *(1-busy);
+
+            Console.WriteLine(liters);
+
+        }
+    }
+    }
+
