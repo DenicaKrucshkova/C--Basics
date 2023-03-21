@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int chicken = int.Parse(Console.ReadLine());
+            int fisch = int.Parse(Console.ReadLine());
+            int vegi = int.Parse(Console.ReadLine());
+           
+
+            double chickenAmount =chicken * 10.35;
+            double fischAmount =fisch * 12.40;
+            double vegiAmount =vegi * 8.15;
+            
+            double desert = (chickenAmount+fischAmount+vegiAmount)*20/100.0;
+
+            double delivery = 2.50;
+            double sum = chickenAmount + fischAmount + vegiAmount + desert + delivery;
+
+            Console.WriteLine(sum);
+        }
+    }
+    }
+
