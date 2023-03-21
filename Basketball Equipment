@@ -1,0 +1,30 @@
+using System;
+
+namespace MyFirstProject1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Баскетболен екип – цената му е 20% по-евтина от тази на кецовете
+            /*Баскетболни кецове – цената им е 40% по-малка от таксата за една година
+            Баскетболна топка – цената ѝ е 1 / 4 от цената на баскетболния екип
+            Баскетболни аксесоари – цената им е 1 / 5 от цената на баскетболната топка
+
+                    Вход
+            От конзолата се четe 1 ред:
+            Годишната такса за тренировки по баскетбол – цяло число в интервала [0… 9999]
+            Изход
+            Да се отпечата на конзолата колко ще са разходите на Джеси, ако започне да спортува баскетбол.*/
+            int TaxPerYear = int.Parse(Console.ReadLine());
+            double shouesprice = TaxPerYear * 0.6;
+            double autfitPraice = shouesprice * 0.8;
+            double ballPricee = autfitPraice / 4;
+            double accprice = ballPricee / 5;
+            double sum = shouesprice + autfitPraice + ballPricee + accprice + TaxPerYear;
+            Console.WriteLine(sum);
+
+
+}
+}
+}
