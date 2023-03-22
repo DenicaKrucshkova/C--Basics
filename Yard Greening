@@ -1,0 +1,24 @@
+using System;
+
+namespace MyFirstProject1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const double PricePerMeter = 7.61;
+            const double DiscountPercentAmount = 0.18;
+            double Metres = int.Parse(Console.ReadLine());
+            double price = Metres * PricePerMeter;
+            double discount = price * DiscountPercentAmount;
+            price -= discount;
+            Console.WriteLine($"The final price is:{price} lv.");
+            Console.WriteLine($"The discount is:{discount} lv");
+
+
+            
+           
+
+        }
+    }
+}
