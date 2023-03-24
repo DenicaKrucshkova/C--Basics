@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int firstTime = int.Parse(Console.ReadLine());
+            int sekantTime = int.Parse(Console.ReadLine());
+            int thirtTime = int.Parse(Console.ReadLine());
+            int totalTime = firstTime + sekantTime + thirtTime;
+
+            int minutes = totalTime / 60;
+            int sekonds = totalTime % 60;
+
+            if (sekonds < 10)
+            {
+                Console.WriteLine($"{minutes}:0{sekonds}");
+
+
+            }
+            else
+            {
+                Console.WriteLine($"{minutes}:{sekonds}");
+
+            }
+        }
+    }
+}
