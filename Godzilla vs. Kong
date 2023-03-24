@@ -1,0 +1,40 @@
+using System;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double filmBudget = double.Parse(Console.ReadLine());
+            int extras = int.Parse(Console.ReadLine());
+            double PricePerGloth = double.Parse(Console.ReadLine());
+            double totalIPriceCloyh = extras * PricePerGloth;
+            double decorPrice = filmBudget / 10;
+            double totalPriceMovie = totalIPriceCloyh +decorPrice;
+            if (extras>150)
+            {
+                totalIPriceCloyh = totalIPriceCloyh / 10;
+
+            }
+            if (filmBudget >= totalPriceMovie)
+            {
+                Console.WriteLine("Action!");
+                Console.WriteLine($"Wingard starts filming with{(filmBudget - totalPriceMovie):F2} leva left.");
+            }
+            else
+            {
+                Console.WriteLine("Not enough money!");
+                Console.WriteLine($"Wingard needs {(totalPriceMovie - filmBudget):F2} leva more.");
+            }
+
+            }
+        }
+	
+         
+	
+                
+	}       
+	
+        
+    
